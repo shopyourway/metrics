@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
+		<PackageId>OhioBox.Metrics</PackageId>
+		<BuildNumber>0</BuildNumber>
+		<PackageVersionSuffix>-dev</PackageVersionSuffix>
+		<AssemblyVersion>2.2.$(BuildNumber)</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<PackageVersion>$(AssemblyVersion)$(PackageVersionSuffix)</PackageVersion>
+		<Authors>Sears Israel</Authors>
+		<Description>Lightweight metrics provider for performance measurement (Graphite client, etc...)</Description>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<RepositoryUrl>https://github.com/shopyourway/metrics</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/shopyourway/metrics</PackageProjectUrl>
+		<Copyright>© 2016 Sears Israel. All rights reserved.</Copyright>
+		<PackageTags>bootstrap</PackageTags>
+		<RestoreConfigFile>..\.nuget\NuGet.config</RestoreConfigFile>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Web" />
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="OhioBox.Time" Version="2.0.1" />
+	</ItemGroup>
+</Project>

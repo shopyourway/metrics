@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net45</TargetFramework>
+		<PackageId>OhioBox.Time.Tests</PackageId>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="NUnit" Version="2.6.4" />
+		<PackageReference Include="OhioBox.Time" Version="2.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\OhioBox.Metrics\OhioBox.Metrics.csproj" />
+	</ItemGroup>
+</Project>
