@@ -13,7 +13,7 @@ Metrics is a framework for reporting data point information (measurements and ti
 [![NuGet](https://img.shields.io/nuget/v/OhioBox.Metrics.svg?style=flat-square)](https://www.nuget.org/packages/OhioBox.Metrics/)
 
 ### Start Reporting Metrics
-In order to start reporting metrics on your application, just call `MetricsStarter.Initialize` with the required reporters, on the application startup:
+To start reporting metrics on an application, just call `MetricsStarter.Initialize` with the required reporters, on the application startup:
 
 ```cs
 MetricsStarter.Initialize(
@@ -22,7 +22,7 @@ MetricsStarter.Initialize(
 );
 ```
 
-Next, in order to report metrics data, you need to use the static `Metrics` object, with the required operation. For example:
+Next, to report metrics data, you need to use the static `Metrics` object, with the required operation. For example:
 
 ```cs
 //first, declare a space:
@@ -46,7 +46,7 @@ public void SomeMethod()
 ```
 
 ### Using Graphite
-In order to use graphite, you will need to implement `IGraphiteConfiguration` on your appllication, and pass it to the `GraphiteMetricsReporterFactory` as shown above.
+To use graphite, you will need to implement `IGraphiteConfiguration` on your appllication, and pass it to the `GraphiteMetricsReporterFactory` as shown above.
 
 ```cs
 public class GraphiteConfiguration : IGraphiteConfiguration
