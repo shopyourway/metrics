@@ -1,5 +1,5 @@
 # Metrics
-Metrics is a simple framework for metrics reporting for .NET applications, uncompromisingly simple.
+Metrics is a framework for reporting data point information (measurements and time series) for .NET applications, uncompromisingly simple.
 
 ## Highlights
 * We currently support the following targets out of the box:
