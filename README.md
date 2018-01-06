@@ -1,7 +1,7 @@
 # Metrics
 Metrics is a framework for reporting data point information (measurements and time-series) for .NET applications, uncompromisingly simple.
 
-Metrics can also used as a great .NET client for Graphite.
+Metrics can also be used as a .NET client for Graphite.
 
 ## Highlights
 * We currently support the following targets out of the box:
