@@ -14,8 +14,7 @@
 		<RepositoryUrl>https://github.com/shopyourway/metrics</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/shopyourway/metrics</PackageProjectUrl>
 		<Copyright>© 2016 Sears Israel. All rights reserved.</Copyright>
-		<PackageTags>bootstrap</PackageTags>
-		<RestoreConfigFile>..\.nuget\NuGet.config</RestoreConfigFile>
+		<PackageTags>metrics graphite perf performance</PackageTags>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net45'">
 		<Reference Include="System" />
