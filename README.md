@@ -1,5 +1,7 @@
 # Metrics
-Metrics is a framework for reporting data point information (measurements and time series) for .NET applications, uncompromisingly simple.
+Metrics is a framework for reporting data point information (measurements and time-series) for .NET applications, uncompromisingly simple.
+
+Metrics can also used as a great .NET client for Graphite.
 
 ## Highlights
 * We currently support the following targets out of the box:
@@ -46,7 +48,9 @@ public void SomeMethod()
 ```
 
 ### Using Graphite
-To use graphite, you will need to implement `IGraphiteConfiguration` on your appllication, and pass it to the `GraphiteMetricsReporterFactory` as shown above.
+One of Metric's main targets is Graphite. Graphite is a monitoring tool that applications can report numeric data-points to, and afterwards visualize this data. (more info abour Graphite can be found on Graphite's webstite: https://graphiteapp.org/.
+
+To use Graphite, you will need to implement `IGraphiteConfiguration` on your application, and pass it to the `GraphiteMetricsReporterFactory` as shown above.
 
 ```cs
 public class GraphiteConfiguration : IGraphiteConfiguration
