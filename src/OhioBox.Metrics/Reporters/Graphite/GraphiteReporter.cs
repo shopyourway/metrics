@@ -13,7 +13,7 @@ namespace OhioBox.Metrics.Reporters.Graphite
 		private readonly UdpClient _udpClient;
 		private readonly string _prefix;
 
-		public GraphiteReporter(GraphiteConfiguration configuration, IGraphiteSwitch graphiteSwitch)
+		public GraphiteReporter(IGraphiteConfiguration configuration, IGraphiteSwitch graphiteSwitch)
 		{
 			if (configuration.IpAddress == null)
 				return;

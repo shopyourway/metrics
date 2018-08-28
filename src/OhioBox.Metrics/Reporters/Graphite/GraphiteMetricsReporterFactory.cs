@@ -4,10 +4,10 @@ namespace OhioBox.Metrics.Reporters.Graphite
 {
 	public class GraphiteMetricsReporterFactory : IMetricsReporterFactory
 	{
-		private readonly GraphiteConfiguration _configuration;
+		private readonly IGraphiteConfiguration _configuration;
 		private readonly IGraphiteSwitch _graphiteSwitch;
 
-		public GraphiteMetricsReporterFactory(GraphiteConfiguration configuration, IGraphiteSwitch graphiteSwitch = null)
+		public GraphiteMetricsReporterFactory(IGraphiteConfiguration configuration, IGraphiteSwitch graphiteSwitch = null)
 		{
 			_configuration = configuration;
 			_graphiteSwitch = graphiteSwitch;

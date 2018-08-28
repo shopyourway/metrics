@@ -1,6 +1,13 @@
 ﻿namespace OhioBox.Metrics.Reporters.Graphite
 {
-	public class GraphiteConfiguration
+	public interface IGraphiteConfiguration
+	{
+		string IpAddress { get; }
+		bool ReportMachineName { get; }
+		string Prefix { get; }
+	}
+
+	public class GraphiteConfiguration : IGraphiteConfiguration
 	{
 		public string IpAddress { get; }
 		public bool ReportMachineName { get; }
